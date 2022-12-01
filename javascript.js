@@ -1,4 +1,45 @@
-// import {*} from './functions.js'
+class inventario{
+  constructor(id,nombre,precio,stock,cantidad){
+  this.id=id
+  this.nombre=nombre
+  this,precio=precio
+  this.stock=stock
+  this.cantidad=cantidad
+}
+
+}
+//Objetos de micros
+const ryzen3700 = new inventario(1,"Ryzen 3700",150000,5)
+const intel= new inventario(2,"Intel i7",100000,5)
+const ryzen5600= new inventario(3,"Ryzen 5600",80000,5)
+//objetos de GPU
+const rtx3080=new inventario(4,"RTX 3080",200000,5)
+const radeon5700= new inventario (5 ,"Radeon 5700XT",180000,5)
+const rtx3060= new inventario (6,"RTX 3060",130000,5)
+//objetos Ram
+const ram8gb= new inventario(7,"Ram 8GB",7000,5)
+const ram16gb= new inventario(8,"Ram 16gb", 12000,5)
+const ram32gb= new inventario(9,"Ram 32gb",18000,5 )
+//objetos HDD
+const hdd80=new inventario(10,"HDD 80GB",4000,5)
+const hdd120= new inventario(11,"HDD 160GB",8000,5)
+const hdd160=new inventario(12,"HDD 160GB",16000,5)
+
+const carrito=[]
+
+var micro=document.getElementsByName("micro")
+
+for (let i = 0; i < micro.length; i++) {
+  if (micro[i].checked){
+    carrito.push(i)
+    console.log(carrito)
+  }
+  
+}
+
+
+
+/*
 
 const Seleccion = () => {
   while (
@@ -158,3 +199,4 @@ respuesta=respuesta.toLowerCase()
 Inicio()
 
 
+*/
