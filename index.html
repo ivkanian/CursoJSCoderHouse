@@ -14,59 +14,59 @@
         <h1>Microprocesador</h1>
         <img src="https://concepto.de/wp-content/uploads/2018/09/microprocesador2-e1536004121342.jpg" width="250" height="150">
         <form action="">
-            <input type="radio" id="1" name="micro">
+            <input type="radio" id="ryzen7600" name="micro">
                 <label for="ryzen7600">Ryzen 7600</label>
-            <input type="radio" id="2" name="micro">
+            <input type="radio" id="intel I7" name="micro">
                 <label for="intel">Intel Core i7</label>
-            <input type="radio" id="3" name="micro">
+            <input type="radio" id="ryzen5600" name="micro">
                 <label for="ryzen5600">Ryzen 5600</label>
            </form>
-        <input type="submit" value ="Añadir al carrito">
+        <input type="submit" value ="Añadir al carrito" onclick="addtocart1()" id="addmicro">
     </div>
 
     <div>
         <h1>Placa de video</h1>
         <img src="https://tienda.starware.com.ar/wp-content/uploads/2022/02/placa-de-video-gpu-nvidia-colorful-geforce-gtx-1660-super-6gb-gddr6-bulk-2545-5577.jpg" width="250" height="150">
         </form action="">
-            <input type="radio" id="3080" name="gpu">
+            <input type="radio" id="RTX 3080" name="gpu">
                 <label for="3080">RTX 3080</label>
-            <input type="radio" id="5700" name="gpu">
+            <input type="radio" id="5700XT" name="gpu">
                 <label for="5700">5700XT</label>
-            <input type="radio" id="3060" name="gpu">
+            <input type="radio" id="RTX 3060" name="gpu">
                 <label for="3060">RTX 3060</label>
         </form>
-        <input type="submit" value="Añadir al carrito">
+        <input type="submit" value="Añadir al carrito" onclick="addtocart2()" id="addgpu" >
     </div>
 
     <div>
         <h1>Memorias Ram</h1>
         <img src="https://concepto.de/wp-content/uploads/2018/09/RAM1-e1537470550128.jpg" width="250" height="150">
         </form>
-        <input type="radio" id="8gb" name="ram">
+        <input type="radio" id="Ram8gb" name="ram">
             <label for="ram">8gb</label>
-        <input type="radio" id="16gb" name="ram">
+        <input type="radio" id="Ram16gb" name="ram">
             <label for="16gb"> 16gb</label>
-        <input type="radio" id="32gb" name="ram">
+        <input type="radio" id="Ram32gb" name="ram">
             <label for="32gb"> 32gb</label>
         </form>
-    <input type="submit" value="Añadir al carrito">
+    <input type="submit" value="Añadir al carrito" onclick="addtocart3()" id="addram">
     </div>
 
     <div>
         <h1>disco rigido</h1>
         <img src="https://axa.com.ar/webaxa/14114/disco-rigido-1tb-seagate-barracuda-sata-6gb-s-64-mb-cache.jpg" width="250" height="150">
         <form action="">
-            <input type="radio" id="80gb" name="hdd">
+            <input type="radio" id="HDD 80 GB" name="hdd">
                 <label for="80gb">HDD 80 GB</label>
-            <input type="radio" id="120gb" name="hdd">
+            <input type="radio" id="HDD 120 GB" name="hdd">
                 <label for="120gb">HDD 120 GB</label>
-            <input type="radio" id="160gb" name="hdd">
+            <input type="radio" id="HDD 160 GB" name="hdd">
                 <label for="160gb">HDD 160 GB</label>
         </form>
-        <input type="submit" value="Añadir al carrito">
+        <input type="submit" value="Añadir al carrito" onclick="addtocart4()" id="addhdd">
     </div>
     <div>
-        <button>Mostrarme el listado a comprar</button>
+        <button id="final" onclick="final()">Mostrarme el listado a comprar</button>
     </div>
 </body>
 </html>

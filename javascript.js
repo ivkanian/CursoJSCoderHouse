@@ -27,15 +27,52 @@ const hdd160=new inventario(12,"HDD 160GB",16000,5)
 
 const carrito=[]
 
-var micro=document.getElementsByName("micro")
-
-for (let i = 0; i < micro.length; i++) {
-  if (micro[i].checked){
-    carrito.push(i)
-    console.log(carrito)
-  }
+ const addtocart1=()=>{
   
+  var micro=document.getElementsByName("micro")
+  for (let i = 0; i < micro.length; i++) {
+  if (micro[i].checked){
+    carrito.push(micro[i])
+  }
 }
+}
+
+const addtocart2=()=>{
+  var gpu=document.getElementsByName("gpu")
+  for (let i = 0; i < gpu.length; i++) {
+  if (gpu[i].checked){
+    carrito.push(gpu[i])
+  }
+}}
+
+const addtocart3=()=>{
+  var ram=document.getElementsByName("ram")
+  for (let i = 0; i < ram.length; i++) {
+  if (ram[i].checked){
+    carrito.push(ram[i])
+  }
+}}
+const addtocart4=()=>{
+  var hdd=document.getElementsByName("hdd")
+  for (let i = 0; i < hdd.length; i++) {
+  if (hdd[i].checked){
+    carrito.push(hdd[i])
+  }
+}}
+
+const final=()=>(
+  alert(carrito)
+)
+
+
+
+
+
+
+
+  
+  
+
 
 
 
